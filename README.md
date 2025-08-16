@@ -1,23 +1,49 @@
-# Heart Disease Prediction
+# 🩺 Heart Disease Prediction Project
 
-## Project Overview
-This project uses machine learning models to predict the presence of heart disease in patients based on various health indicators.
+### **Project Overview**
+This project uses machine learning to predict heart disease in patients based on various health metrics. The original dataset is not included in this repository.
 
-## Dataset
-The dataset used in this project is a CSV file containing information about patient health metrics. The dataset is not included in this repository.
+---
 
-## Key Findings & Visualizations
-* **Gender Distribution**: The dataset contains more male patients than female patients. (68.3% male vs 31.7% female) [cite_start][cite: 830, 831, 832]
-* **Chest Pain Types**: The most common type of chest pain is asymptomatic (type 0). [cite: 849, 853]
-* **Class Distribution**: The number of patients with heart disease is slightly higher than those without. (165 vs 138) [cite_start][cite: 865, 867]
-**Feature Correlation**: The strongest positive correlation with heart disease is `cp` (chest pain), while the strongest negative correlations are `exang` (exercise-induced angina) and `oldpeak`. [cite: 733, 745, 747]
+### **Key Visualizations & Findings**
 
-## Models Used
-This project uses three different machine learning models:
-1.  [cite_start]**Logistic Regression**: This model had an Area under ROC score of `0.88`[cite: 915].
-2.  **Random Forest**
-3.  **Linear SVM**
+#### **1. Class Distribution**
+This chart shows the number of patients with and without heart disease, revealing a slight imbalance in the dataset.
+![Class Distribution](<https://i.imgur.com/x9YJ1TK.png>)
 
-## Model Evaluation
-* [cite_start]**Logistic Regression**: Achieved an average AUC score of 0.835 across 5-fold cross-validation. [cite: 988, 991, 996, 997, 999]
-* [cite_start]**Deep Learning**: A TensorFlow model was trained and achieved a final test accuracy of `0.909`[cite: 981].
+#### **2. Gender Distribution**
+This visualization breaks down the gender of patients in the dataset.
+![Gender Distribution](<https://i.imgur.com/ZjRyZML.png>)
+
+#### **3. Chest Pain Types**
+This visualization breaks down the different types of chest pain recorded in the dataset.
+![Chest Pain Types](<https://i.imgur.com/P320VW0.png>)
+
+#### **4. Feature Correlation**
+This heatmap shows the correlation between different features in the dataset and heart disease, identifying the most important predictors.
+![Feature Correlation Heatmap](<https://i.imgur.com/CdCOgwR.png>)
+
+---
+
+### **Model Evaluation**
+
+#### **5. Logistic Regression Model**
+The ROC curve is used to evaluate the performance of the Logistic Regression model.
+![Logistic Regression ROC Curve](<https://i.imgur.com/aUGGwRZ.png>)
+
+#### **6. Feature Importance**
+This visualization highlights the most important features in the prediction model, ranked by importance.
+![Feature Importance](<https://i.imgur.com/MMr9tSK.png>)
+
+---
+
+### **About the Models**
+This project explores the use of multiple machine learning models, including Logistic Regression, Random Forest, and a Deep Learning model to predict heart disease.
+
+### **Technologies Used**
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- TensorFlow

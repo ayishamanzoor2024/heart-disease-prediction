@@ -35,6 +35,14 @@ The ROC curve is used to evaluate the performance of the Logistic Regression mod
 This visualization highlights the most important features in the prediction model, ranked by importance.
 ![Feature Importance](<https://i.imgur.com/MMr9tSK.png>)
 
+#### **7. Permutation Feature Importance**
+This chart shows the importance of each feature in the model by measuring the decrease in score when the feature's values are randomly shuffled.
+![Permutation Feature Importance](<https://i.imgur.com/GuE1NBL.jpeg>)
+
+#### **8. SHAP Feature Importance**
+This visualization shows how each feature contributes to the model's output for a specific patient, providing a more detailed explanation.
+![SHAP Feature Importance](<https://i.imgur.com/cXZ79Xs.png>)
+
 ---
 
 ### **About the Models**
